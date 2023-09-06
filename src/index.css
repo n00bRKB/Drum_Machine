@@ -1,0 +1,84 @@
+@font-face {
+  font-family: "seven_segmentregular";
+  src: url("./assets/fonts/seven_segment-webfont.woff2") format("woff2"),
+    url("./assets/fonts/seven_segment-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(0, 178, 248);
+}
+#drum-machine {
+  background-color: rgb(17, 8, 41);
+  border: 5px solid burlywood;
+}
+
+.drum-machine {
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  width: 600px;
+  height: 420px;
+}
+
+.display {
+  border: 5px solid rgb(0, 255, 136);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  border-radius: 5px;
+  height: 50px;
+  width: 250px;
+  background-color: rgb(8, 133, 60);
+  font-family: "seven_segmentregular";
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background-color: blueviolet;
+  color: aliceblue;
+  min-width: 50px;
+  width: 70px;
+  height: 50px;
+  margin: 10px 50px;
+}
+
+.btn:hover {
+  background-color: blueviolet;
+  color: aliceblue;
+}
+
+.drum-machine {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.drum-pad {
+  transition: all 0.2s ease-in-out;
+}
+
+.drum-pad:active {
+  transform: translate(4px, 4px);
+}
