@@ -48,9 +48,14 @@ body {
 }
 
 .btn {
+  font-size: larger;
+  font-weight: bold;
   background-color: blueviolet;
   color: aliceblue;
   margin: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .btn:hover {
