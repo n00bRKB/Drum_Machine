@@ -62,7 +62,9 @@ function App() {
   return (
     <div className="container-fluid col d-flex justify-content-center align-items-center align-content-center vh-100 text-center">
       <div className="drum-machine" id="drum-machine">
-        <h2 className="display" id="display"></h2>
+        <h2 className="display" id="display">
+          --Drum Machine--
+        </h2>
         <div className="button">
           {audioClips.map((clip) => {
             return <Button key={clip.id} clip={clip} />;
